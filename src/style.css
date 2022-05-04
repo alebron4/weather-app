@@ -1,0 +1,57 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+  border: 1px solid #235784;
+  border-radius: 4px;
+}
+.search-city {
+  margin: 30px 0;
+}
+h1,
+h2,
+h3,
+ul {
+  color: #235784;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+h2 {
+  font-weight: 25px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 20px;
+  margin-top: -5px;
+}
+h5 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.25;
+}
+input {
+  margin: 20px 0;
+  background-color: #bcdbdf;
+}
+.current-weather {
+  font-size: 40px;
+}
+.card {
+  background: #bcdbdf;
+  color: #235784;
+  text-align: center;
+  margin: 10px 0 30px 0;
+  border: 1px solid #235784;
+}
+.weather-icon {
+  font-size: 35px;
+}
