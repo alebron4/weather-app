@@ -19,9 +19,6 @@
     <form id="search-city">
         <input type="text" id="city-input" placeholder="Enter city name" />
         <input type="submit" value="Search" />
-          <button id=current-location>
-          Current Location
-         </button>
     </form>
       <div class="row">
         <div class="col-6">
@@ -29,9 +26,12 @@
           <h3>
             Sunday
           </h3>
+          <div>
+            <img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="Mostly Cloudy" id="icon">
+          </div>
         </div>
         <div class="col-6">
-          <h2> <span id="temperature">14</span> <span class="units">°C</span> </h2>
+          <h2> <span id="temperature">14</span> <span class="units"> <a href="#" id="celsius-link">°C </a></span>|<a href="#" id="fahrenheit-link">°F</a></h2>
           <h4>
             <ul>
               <li> <span id="description">Mostly Cloudy</span></li>
