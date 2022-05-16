@@ -1,9 +1,8 @@
 function showTemp(response) {
   let currentTemp = document.querySelector("#temperature");
   currentTemp.innerHTML = Math.round(response.data.main.temp);
-  let searchInput = document.querySelector("#city-input");
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${searchInput.value}`;
+  let cityElement = document.querySelector("#city");
+  cityElement.innerHTML = response.data.name;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -42,13 +41,19 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function handleSubmit(event) {
-  event.preventDefault();
+function search(city) {
   let apiKey = "fe62e0fa78e8a82e333a6473b76e27aa";
-  let city = document.querySelector("#city-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemp);
 }
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityElement = document.querySelector("#city-input");
+  search(cityElement.value);
+}
+
+search("Barcelona");
 
 let form = document.querySelector("#search-city");
 form.addEventListener("submit", handleSubmit);
