@@ -55,10 +55,25 @@ input {
 .weather-icon {
   font-size: 35px;
 }
-.weather-temperature{
+.weather-temperature {
   color: #235784;
 }
 
 .weather-temperature:hover {
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 20px 0;
+  text-align: center;
+  color: #235784;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
