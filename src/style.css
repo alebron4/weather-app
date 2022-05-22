@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 20px;
+  margin: 30px;
   border: 1px solid #235784;
   border-radius: 4px;
 }
@@ -38,6 +38,7 @@ ul {
   font-size: 15px;
   line-height: 1.25;
 }
+
 input {
   margin: 20px 0;
   background-color: #bcdbdf;
@@ -76,4 +77,11 @@ input {
 }
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+.open-source {
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #235784;
 }
