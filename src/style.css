@@ -41,13 +41,13 @@ ul {
 
 input {
   margin: 20px 0;
-  background-color: #bcdbdf;
+  background-color: #49c1ce;
 }
 .current-weather {
   font-size: 40px;
 }
 .card {
-  background: #bcdbdf;
+  background: #99c9cf;
   color: #235784;
   text-align: center;
   margin: 10px 0 10px 0;
